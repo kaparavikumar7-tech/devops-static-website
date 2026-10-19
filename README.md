@@ -125,3 +125,65 @@ Aspiring DevOps Engineer
 - GitHub Profile: https://github.com/kaparavikumar7-tech
 - Project Repository: https://github.com/kaparavikumar7-tech/devops-static-website
 - Email: ravikumarkapa7@gmail.com
+
+## Troubleshooting and Lessons Learned
+
+During this AWS EC2 static website deployment project, I encountered issues involving Nginx command availability and SSH connectivity.
+
+### Issue 1: `bash: nginx: command not found`
+
+**Symptom**
+
+The Linux shell returned the error:
+
+```text
+bash: nginx: command not found
+```
+
+**Investigation**
+
+- Identified that the shell could not locate the Nginx command.
+- The next diagnostic step is to verify whether Nginx is installed and whether its executable is available in the system's PATH.
+
+**Possible Root Cause**
+
+Nginx may not have been installed, or its executable may not have been accessible through the current PATH. The exact cause requires verification.
+
+**Resolution**
+
+The website was eventually deployed and tested successfully using Nginx. However, the exact corrective command used to resolve this error has not yet been confirmed.
+
+**Key Learning**
+
+When a command is not found, verify software installation and command availability before attempting further configuration.
+
+### Issue 2: SSH Connectivity to AWS EC2
+
+**Symptom**
+
+An SSH connection issue occurred while accessing the EC2 instance.
+
+**Investigation**
+
+SSH connectivity requires checking the connection details, instance status, authentication key, network reachability, and applicable security group rules.
+
+**Root Cause**
+
+The exact cause of the original SSH issue has not yet been confirmed.
+
+**Resolution**
+
+SSH access was eventually established for the project. The exact corrective action used to resolve the original connection issue still needs to be documented.
+
+**Key Learning**
+
+Troubleshoot SSH failures systematically by checking the error message, instance status, connection details, authentication, and network access.
+
+### Troubleshooting Summary
+
+| Issue | Status |
+|---|---|
+| Nginx command not found | Encountered; exact fix needs verification |
+| SSH connectivity | Encountered; exact cause and fix need verification |
+| Website deployment | Completed and tested |
+
